@@ -19,3 +19,16 @@ tools/people.py is a file where you can store ids, e.g.
 durov = 1
 my_group = 123456789
 ```
+
+Example of usage:
+```python
+from tools import *
+
+api = tools.create_api(MESSAGES)
+
+# print last message in the chat with user with id 1
+print(api.messages.getHistory(user_id=1)['items'][0])
+
+# same, but if you have username in people.py
+print(api.messages.getHistory(user_id=people.username)['items'][0])
+```
