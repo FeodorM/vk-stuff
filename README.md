@@ -9,6 +9,7 @@ Write this into tools/config.py:
 app_id = 'app id'
 login = 'your login'
 password = 'your password'
+DIR = '/path/to/cloned/dir/vk-stuff'
 ```
 
 there app_id is id of your app (you can create it [here](https://vk.com/apps?act=manage))
