@@ -90,3 +90,15 @@ ENV/
 
 # PyCharm
 .idea/
+
+# My stuff
+
+useless/
+log/
+
+# these files are used for testing stuff
+test.py
+
+# files with private config
+people.py
+config.py
