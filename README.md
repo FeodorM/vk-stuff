@@ -6,7 +6,7 @@ There is no tools/config.py and tools/people.py, you need to create them.
 Write this into tools/config.py:
 
 ```python
-app_id = 123456789
+app_id = 'app id'
 login = 'your login'
 password = 'your password'
 ```
