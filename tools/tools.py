@@ -13,10 +13,12 @@ def format_phone(phone: phonenumbers.PhoneNumber) -> str:
 
 
 def create_api(configs: Union[List[str], str] = '') -> vk.API:
-    return vk.API(vk.AuthSession(
-        app_id, login, password,
-        v='5.59',
-        scope=','.join(configs) if not isinstance(configs, str) else configs)
+    return vk.API(
+        vk.AuthSession(
+            app_id, login, password,
+            scope=','.join(configs) if not isinstance(configs, str) else configs
+        ),
+        v='5.59'
     )
 
 
