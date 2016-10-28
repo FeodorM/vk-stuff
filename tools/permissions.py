@@ -1,0 +1,7 @@
+FRIENDS = 'friends'
+PHOTOS = 'photos'
+AUDIO = 'audio'
+VIDEOS = 'videos'
+MESSAGES = 'messages'
+WALL = 'wall'
+GROUPS = 'groups'
