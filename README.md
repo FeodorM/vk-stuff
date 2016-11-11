@@ -6,13 +6,15 @@ There is no tools/config.py and tools/people.py, you need to create them.
 Write this into tools/config.py:
 
 ```python
-app_id = 'app id'
-login = 'your login'
-password = 'your password'
+APP_ID = 'app id'
+LOGIN = 'your login'
+PASSWORD = 'your password'
 DIR = '/path/to/cloned/dir/vk-stuff'
+PHONE_NUMBER = '88005553535'
 ```
 
-there app_id is id of your app (you can create it [here](https://vk.com/apps?act=manage))
+there APP_ID is id of your app (you can create it [here](https://vk.com/apps?act=manage)) and
+PHONE_NUMBER is default number to send sms with smssend.py  
 
 tools/people.py is a file where you can store ids, e.g.
 

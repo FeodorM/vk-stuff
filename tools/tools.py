@@ -1,5 +1,4 @@
 import vk
-import phonenumbers
 
 from typing import List, Union, Callable, Dict, Any
 from time import sleep
@@ -7,16 +6,11 @@ from time import sleep
 from tools.config import *
 
 
-def format_phone(phone: phonenumbers.PhoneNumber) -> str:
-    return phonenumbers.format_number(
-        phone, phonenumbers.PhoneNumberFormat.INTERNATIONAL)
-
-
-def create_api(configs: Union[List[str], str] = '') -> vk.API:
+def create_api(*configs: List[str]) -> vk.API:
     return vk.API(
         vk.AuthSession(
-            app_id, login, password,
-            scope=','.join(configs) if not isinstance(configs, str) else configs
+            APP_ID, LOGIN, PASSWORD,
+            scope=','.join(configs)
         ),
         v='5.59'
     )

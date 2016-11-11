@@ -10,7 +10,7 @@ sys.path.append('/home/satan/vk')
 from tools import *
 
 
-api = tools.create_api([MESSAGES])
+api = tools.create_api(MESSAGES)
 
 # TODO: make cool args
 for arg in sys.argv[1:]:
